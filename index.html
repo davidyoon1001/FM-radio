@@ -24,16 +24,32 @@
             <label>Display Panel</label>
             <div class="frequency-wrapper">
                 <img src="img/clipart2030904.png" alt="frequency-image">
-                <h1 class="frequency-value">102.2 Mhz</h1>
+                <h1 class="frequency-value">97.9 <span>FM</span></h1>
             </div>
         </div>
-        <div class="panel-wrapper test">
+        <div class="panel-wrapper panel-right">
             <label>Control Panel</label>
             <div>
-                <input type="range" name="" id="">
+                <div id="app"></div>
+            </div>
+            <div class="range">
+                <div class="slider">
+                    <div class="frequency">87.9 (Mhz)</div>
+                    <input type="range" name="volum-controller" min="87.9" max="107.9" value="97.9" step="0.2">
+                    <div class="frequency">107.9 (Mhz)</div>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
             </div>
         </div>
     </main>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
