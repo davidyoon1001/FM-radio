@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ress.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
         rel="stylesheet">
     <title>David Yoon | FM radio frontend design</title>
@@ -29,13 +30,21 @@
         </div>
         <div class="panel-wrapper panel-right">
             <label>Control Panel</label>
-            <div>
-                <div id="app"></div>
+            <div class="rotary-knob-wrapper">
+                <span class="material-icons volume-controller">expand_more</span>
+                <span>0</span>
+                <div class="rotary-knob">
+                    <p class="current-vol">5</p>
+                    <div class="knob">
+                    </div>
+                </div>
+                <span>10</span>
+                <span class="material-icons volume-controller">expand_less</span>
             </div>
             <div class="range">
                 <div class="slider">
                     <div class="frequency">87.9 (Mhz)</div>
-                    <input type="range" name="volum-controller" min="87.9" max="107.9" value="97.9" step="0.2">
+                    <input type="range" min="87.9" max="107.9" value="97.9" step="0.2">
                     <div class="frequency">107.9 (Mhz)</div>
                 </div>
             </div>
@@ -48,6 +57,7 @@
                 <button>6</button>
             </div>
         </div>
+
     </main>
     <script src="js/index.js"></script>
 </body>
