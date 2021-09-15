@@ -135,4 +135,3 @@ radio_buttons.forEach((elem) => {
     })
 })
 
-}
